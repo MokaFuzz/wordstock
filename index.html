@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
+
+  <title>Portland Wordstock</title>
+  <!--<meta name="description" content="Description">-->
+  <!--<meta name="author" content="Author">-->
+
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <link rel="stylesheet" href="libraries/Skeleton-2.0.4/css/normalize.css">
+  <link rel="stylesheet" href="libraries/Skeleton-2.0.4/css/skeleton.css">
+  <link rel="stylesheet" href="stylesheets/animate.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo/icn.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,400,500,700,900|Open+Sans:300,400,400i,600,600i,700,800&amp;subset=latin-ext" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="libraries/fontawesome-pro-5.0.6/on-server/css/fontawesome-all.min.css">
+
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img alt="wordstock logo" id="logo" class="home-logo logo" src="./images/logo/logo.svg" 
+    onmouseover="document.getElementById('logo').src='./images/logo/logo.gif'" 
+    onmouseout="document.getElementById('logo').src='./images/logo/logo.svg'" ></a>
+    <button id="togglenav"><i class="fas fa-bars fa-lg"></i></button>
+    <nav>
+      <ul id="primary-nav" class="">
+        <li>
+          <a href="#">About Wordstock</a>
+        </li>
+        <li class="secondary-nav-parent"><a href="#">2017 Events <i class="far fa-angle-down"></i></a>
+          <ul class="secondary-nav">
+            <li>
+              <a tabindex="1" href="#">Authors &amp; Presenters</a>
+            </li>
+            <li>
+              <a tabindex="1" href="events.html">Onstage Events</a>
+            </li>
+            <li>
+              <a tabindex="1" href="#">Writing Workshops</a>
+            </li>
+            <li>
+              <a tabindex="1" href="#">Exhibitors &amp; Vendors</a>
+            </li>
+            <li>
+              <a tabindex="1" href="#">Partner Events</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Past Festivals</a>
+        </li>
+        <li class="secondary-nav-parent"><a href="#">Participate <i class="far fa-angle-down"></i></a>
+          <ul class="secondary-nav">
+            <li>
+              <a tabindex="1" href="submissions.html">Book Submissions</a>
+            </li>
+            <li>
+              <a tabindex="1" href="#">Volunteer Signup</a>
+            </li>
+          </ul>
+        </li>
+        <li class="secondary-nav-parent"><a href="#">Support <i class="far fa-angle-down"></i></a>
+          <ul class="secondary-nav">
+            <li>
+              <a tabindex="1" href="#">Our Supporters</a>
+            </li>
+            <li>
+              <a tabindex="1" href="#">Become a Supporter</a>
+            </li>
+          </ul>
+        </li>
+        <li id="circle-1" class="buytix" onmouseover="hoverCircle">
+          <a href="#">Buy Tickets</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="heading home-heading">
+    <div class="crop">
+      <img class="main-img animated slideInLeft" alt="wordstock logo" src="images/pictures/2017-Wordstock020-900x600-bw.jpg">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="six columns offset-by-six"><img alt="wordstock logo" src="images/logo/logo.svg" class="logo">
+          <h1><span class="yellowh">Portland's</span> <br>Book <br>Festival.</h1>
+          <h6>Presented by Bank of America.</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="main-desc">
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <p>Join Literary Arts for Wordstock: Portland’s Book Festival, our annual celebration of literature. This one-day event features local and national authors presenting onstage events, pop-up readings, and workshops. Enjoy activities for readers of all ages, an extensive book fair, local food trucks, entry to the Portland Art Museum and more.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="cta">
+    <div class="container">
+      <div class="row">
+        <div data-aos="fade-up" class="twelve columns">
+          <hr>
+          <h4>Save the date! The festival returns <span class="orangeh">Saturday, November 10, 2018.</span></h4>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="featured">
+    <div class="container">
+      <div class="row">
+        <div class="six columns" data-aos="fade-up">
+          <div class="crop">
+            <img src="images/pictures/2017-Wordstock035-900x600.jpg">
+          </div>
+          <h4 class="orangeh"><a href="events.html">Onstage Events</a></h4>
+          <p>Onstage events are at the heart of the festival. With over 43 events scheduled for 2017, there’s something for everyone. <a class="boldu" href="events.html">Learn more</a> about Wordstock’s onstage events.</p>
+        </div>
+        <div class="six columns" data-aos="fade-up">
+          <div class="crop">
+            <img src="images/pictures/2017-Wordstock_070-900x600.jpg">
+          </div>
+          <h4 class="orangeh"><a href="#">Authors &amp; Presenters</a></h4>
+          <p>With over 100 Authors &amp; Presenters on the 2017 lineup, you’re sure to find what you’re looking for, or what you didn’t know you were looking for. <a class="boldu" href="#">Read about</a> Wordstock’s Authors and Presenters.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="six columns" data-aos="fade-up">
+          <div class="crop">
+            <img src="images/pictures/2017-Wordstock047-cropped-for-slideshow-900x600.jpg">
+          </div>
+          <h4 class="orangeh"><a href="#">Workshops</a></h4>
+          <p>Workshops are a fantastic way to improve one’s craft, meet other amazing local writers, and have a great time. Wordstock 2017 has 15 scheduled workshops. <a class="boldu" href="#">Learn more</a> about Wordstock’s workshops.</p>
+        </div>
+        <div class="six columns" data-aos="fade-up">
+          <div class="crop">
+            <img src="images/pictures/2017-Wordstock_073-900x600.jpg">
+          </div>
+          <h4 class="blueh"><a href="#">Exhibitors &amp; Vendors</a></h4>
+          <p>The Wordstock book fair represents some of the best of regional and national publishing, writing, literary culture, academic opportunities, and more. <a class="boldu" href="#">Learn more</a> about Wordstock’s exhibitors and vendors.</p>
+        </div>
+        <div class="row">
+          <div class="six columns" data-aos="fade-up">
+            <div class="crop">
+              <img src="images/pictures/2017-Wordstock006-900x600.jpg">
+            </div>
+            <h4 class="blueh"><a href="#">Partner Events</a></h4>
+            <p>Wordstock would not be possible without the help from our amazing supporters and community partners. Some of our partners put on additional events during the festival and throughout the year. <a class="boldu" href="#">Learn more</a> about Wordstock's partner events.</p>
+          </div>
+          <div class="six columns" data-aos="fade-up">
+            <div class="crop">
+              <img src="images/pictures/2017-Wordstock_072-900x600.jpg">
+            </div>
+            <h4 class="pinkh"><a href="#">Volunteers</a></h4>
+            <p>Wordstock would not be possible without the help of our incredible volunteers. Volunteering is a great way to experience the festival while connecting with a group of similarly driven readers and writers. <a class="boldu" href="#">Learn more</a> about Wordstock’s volunteer program.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="cta">
+    <div class="container">
+      <div class="row">
+        <div data-aos="fade-up" class="twelve columns">
+          <hr>
+          <h4>Help support Wordstock by <a class="pinkh" href="#">becoming a community partner.</a></h4>
+          <hr>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="big-footer container">
+      <div class="row">
+        <div class="three columns">
+          <div id="contact">
+            <div class="contact-wrap">
+              <h6>Contact</h6>
+              <p>Literary Arts 925&nbsp;SW Washington St.&nbsp;Portland, OR 97205
+              </p>
+              <hr>
+              <p>
+                503.227.2583<br>503.241.4256 fax&nbsp;la@literary-arts.org</p>
+              <p>
+                <a href="#">Privacy Policy</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="footer-nav" class="three columns">
+          <h6>Pages</h6>
+          <ul>
+            <li><a href="#">About Wordstock</a></li>
+            <li><a href="#">Onstage Events</a></li>
+            <li><a href="#">Authors &amp; Presenters</a></li>
+            <li><a href="#">Workshops</a></li>
+            <li><a href="#">Exhibitors &amp; Vendors</a></li>
+            <li><a href="#">Partner Events</a></li>
+            <li><a href="#">Past Festivals</a></li>
+            <li><a href="#">Book Submissions</a></li>
+            <li><a href="#">Volunteer Sign-Ups</a></li>
+            <li><a href="#">Supporters</a></li>
+            <li><a href="#">Tickets</a></li>
+          </ul>
+        </div>
+        <div id="footer-nav-collapsed" class="three columns">
+          <h6>Pages <i class='fal fa-angle-down'></i></h6>
+          <ul style="display: none;">
+            <li><a href="#">About Wordstock</a></li>
+            <li><a href="#">Onstage Events</a></li>
+            <li><a href="#">Authors &amp; Presenters</a></li>
+            <li><a href="#">Workshops</a></li>
+            <li><a href="#">Exhibitors &amp; Vendors</a></li>
+            <li><a href="#">Partner Events</a></li>
+            <li><a href="#">Past Festivals</a></li>
+            <li><a href="#">Book Submissions</a></li>
+            <li><a href="#">Volunteer Sign-Ups</a></li>
+            <li><a href="#">Supporters</a></li>
+            <li><a href="#">Tickets</a></li>
+          </ul>
+        </div>
+        <div id="tweets" class="six columns">
+          <h6><a href="https://twitter.com/literaryarts"></a>Twitter</h6>
+          <div class="plugin-box"><a class="twitter-timeline" data-height="400" data-link-color="#181818" data-border-color="#181818" data-chrome="noheader nofooter" href="https://twitter.com/literaryarts?ref_src=twsrc%5Etfw">Tweets by literaryarts</a></div>
+        </div>
+        <div id="tweets-collapsed" class="six columns">
+          <h6>Twitter <i class='fal fa-angle-down'></i></h6>
+          <div class="plugin-box" style="display: none;"><a class="twitter-timeline" data-height="400" data-link-color="#181818" data-border-color="#181818" data-chrome="noheader nofooter" href="https://twitter.com/literaryarts?ref_src=twsrc%5Etfw">Tweets by literaryarts</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="small-footer">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns copyright">
+            <p>Copyright &copy; Literary Arts 2018 </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+<script type="text/javascript">
+  $(document).ready()
+
+  function toggleMenu() {
+    var menu = document.getElementById('primary-nav');
+    menu.classList.toggle("show");
+  }
+
+  var button = document.getElementById('togglenav');
+  button.addEventListener('click', toggleMenu);
+
+</script>
+
+<script>
+  AOS.init();
+
+</script>
+
+<script>
+  jQuery(document).ready(function($) {
+
+    $("#footer-nav-collapsed h6").click(function() {
+      $("#footer-nav-collapsed ul").slideToggle("slow");
+      $("#footer-nav-collapsed h6 i").toggleClass("fa-angle-down");
+      $("#footer-nav-collapsed h6 i").toggleClass("fa-angle-up")
+    });
+    $("#tweets-collapsed h6").click(function() {
+      $("#tweets-collapsed .plugin-box").slideToggle("slow");
+      $("#footer-nav-collapsed h6 i").toggleClass("fa-angle-down");
+      $("#footer-nav-collapsed h6 i").toggleClass("fa-angle-up")
+    });
+
+  });
+
+</script>
+
+</html>

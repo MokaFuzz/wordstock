@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
+
+  <title>Portland Wordstock</title>
+  <!--<meta name="description" content="Description">-->
+  <!--<meta name="author" content="Author">-->
+
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <link rel="stylesheet" href="libraries/Skeleton-2.0.4/css/normalize.css">
+  <link rel="stylesheet" href="libraries/Skeleton-2.0.4/css/skeleton.css">
+  <link rel="stylesheet" href="stylesheets/animate.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo/icn.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:300,400,500,700,900|Open+Sans:300,400,400i,600,600i,700,800&amp;subset=latin-ext" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="libraries/fontawesome-pro-5.0.6/on-server/css/fontawesome-all.min.css">
+
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img alt="wordstock logo" id="logo" class="home-logo logo" src="./images/logo/logo.svg" 
+    onmouseover="document.getElementById('logo').src='./images/logo/logo.gif'" 
+    onmouseout="document.getElementById('logo').src='./images/logo/logo.svg'" ></a>
+    <button id="togglenav"><i class="fas fa-bars fa-lg"></i></button>
+    <nav>
+      <ul id="primary-nav" class="">
+        <li>
+          <a href="#">About Wordstock</a>
+        </li>
+        <li class="secondary-nav-parent"><a href="#">2017 Events <i class="far fa-angle-down"></i></a>
+          <ul class="secondary-nav">
+            <li>
+              <a tabindex="1" href="#">Authors &amp; Presenters</a>
+            </li>
+            <li>
+              <a tabindex="1" href="events.html">Onstage Events</a>
+            </li>
+            <li>
+              <a tabindex="1" href="#">Writing Workshops</a>
+            </li>
+            <li>
+              <a tabindex="1" href="#">Exhibitors &amp; Vendors</a>
+            </li>
+            <li>
+              <a tabindex="1" href="#">Partner Events</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Past Festivals</a>
+        </li>
+        <li class="secondary-nav-parent"><a href="#">Participate <i class="far fa-angle-down"></i></a>
+          <ul class="secondary-nav">
+            <li>
+              <a tabindex="1" href="submissions.html">Book Submissions</a>
+            </li>
+            <li>
+              <a tabindex="1" href="#">Volunteer Signup</a>
+            </li>
+          </ul>
+        </li>
+        <li class="secondary-nav-parent"><a href="#">Support <i class="far fa-angle-down"></i></a>
+          <ul class="secondary-nav">
+            <li>
+              <a tabindex="1" href="#">Our Supporters</a>
+            </li>
+            <li>
+              <a tabindex="1" href="#">Become a Supporter</a>
+            </li>
+          </ul>
+        </li>
+        <li class="buytix">
+          <a href="#">Buy Tickets</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="heading">
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <h2><span class="yellowh">Onstage Events</span></h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="sort">
+    <div class="container">
+      <div class="row">
+        <div class="four columns">
+          <label>
+            <select id="time">
+              <option value="all-times">All Times</option>
+              <option value="900">9:00-10:00</option>
+              <option value="1000">10:00-11:00</option>
+              <option value="1100">11:00-12:00</option>
+              <option value="1200">12:00-1:00</option>
+              <option value="100">1:00-2:00</option>
+              <option value="200">2:00-3:00</option>
+              <option value="300">3:00-4:00</option>
+              <option value="400">5:00-6:00</option>
+              <option value="500">6:00-7:00</option>
+            </select>
+          </label>
+        </div>
+        <div class="eight columns">
+          <label>
+            <select id="place">
+              <option value="all-places">All Stages</option>
+              <option value="arlene">Arlene Schnitzer Concert Hall (Cole Haan Stage)</option>
+              <option value="brunish">Brunish Theatre</option>
+              <option value="crumpacker">Crumpacker Library (Middle Grade Stage),</option>
+              <option value="fccuc">First Congregational United Church of Christ</option>
+              <option value="miller">Miller Gallery (Children’s Stage)</option>
+              <option value="toc">The Old Church (YA Stage)</option>
+              <option value="ohs">Oregon Historical Society (Wordstock Stage)</option>
+              <option value="winningstad">Winningstad Theatre (Cirillo-Cooke Stage)</option>
+              <option value="whitsell">Whitsell Auditorium</option>
+            </select>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="events">
+    <div class="container">
+      <div class="event all-times all-places show 900 miller">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Storytime Singalong with Emily Arrow</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">9:00am - 4:00pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Miller Gallery (Children’s Stage)</h6>
+            <h6 class="yellowh">With: Emily Arrow</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Join Emily Arrow for a storytime singalong to open the children's stage! Emily will be hosting the children's stage all day long. Wordstock admission is FREE for attendees 17 years of age and younger.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 900 miller">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Spanish Storytime</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">9:10am - 9:40am</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Miller Gallery (Children’s Stage)</h6>
+            <h6 class="yellowh">With: Jessica Swartz Amezcua</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Join Portland Early Learning Project for a fun Spanish language storytime! Wordstock admission is FREE for attendees 17 and under.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 900 winningstad">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Suspense, Scandal, and Secrets: Families in Crisis </h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">9:45am - 10:45am</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Winningstad Theatre (Cirillo-Cooke Stage)</h6>
+            <h6 class="yellowh">With: Rene Denfeld, Victor Lodato, Amy Stewart, Zach Dundas</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>In Rene Denfeld’s The Child Finder, private investigator Naomi’s search for a lost child reveals her own buried loss. The past likewise haunts Edgar inVictor Lodato’s Edgar and Lucy, a story of family love and betrayal. And in Amy Stewart’s Miss Kopp’s Midnight Confessions, Under Sheriff Constance Kopp’s personal mission to defend women unfairly prosecuted for “moral depravity” is put to the test when her own sister is arrested. With moderator Zach Dundas, editor of Portland Monthly and author of The Great Detective.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 900 miller">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Storytime: Boo Who?</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">9:50am - 10:20am</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Miller Gallery (Children’s Stage)</h6>
+            <h6 class="yellowh">With: Ben Clanton</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Boo is new. And even if the other kids are welcoming, it can be scary being new, especially for a shy ghost who can’t play any of their games. (“You tagged me? Oh, sorry. I couldn’t feel it.”) Can Boo find a way to fit in and make friends with the rest of the group? From the creator of Rex Wrecks It! comes a funny story about feeling invisible — and finding a way to be seen and appreciated for who you are.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 1000 brunish">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Storytime: Boo Who?</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">10:00am - 11:00am</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Brunish Theatre</h6>
+            <h6 class="yellowh">With: John Freeman, Erika L. Sánchez, Javier Zamora, Matthew Zapruder, Sarah Bowlin</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Poetry, as a form, can exploit and explode literary boundaries; and these poets explore borders of all kinds in their work. With moderator Sarah Bowlin. Presented in partnership with the Poetry Foundation.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 1000 whitsell">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">If You Can Make It Here: Art and Artists in New York City</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">10:00am - 11:00am</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Whitsell Auditorium</h6>
+            <h6 class="yellowh">With: Jami Attenberg, Adam Gopnik,Kayla Rae Whitaker, Maris Kreizman</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>There’s a dark side to every New York fairy tale, especially when the complicated lives of artists are at the center. Stories of desire and destruction, of ambition and aspiration, of creativity and commerce.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 1000 fcucc">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Tom Perrotta: The State of Wonder Interview </h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">10:00am - 11:00am</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">First Congregational United Church of Christ</h6>
+            <h6 class="yellowh">With: Tom Perrotta, April Baer</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>In Tom Perrotta’s novels, manners collide with modern values, and traditional order falls prey to surging emotions, hormones, and old-fashioned irony. The author of Election, Little Children, and The Leftovers has a new novel, Mrs. Fletcher, sending up a middle-aged mom’s sexual awakening. Join us for an hour with an accomplished observer of modern life and morals. With OPB’s April Baer.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 1000 arlene">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">What’s the Story with Daniel Handler and Lemony Snicket?</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">10:00am - 11:00am</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Arlene Schnitzer Concert Hall (Cole Haan Stage)</h6>
+            <h6 class="yellowh">With: Daniel Handler, Lemony Snicket, Gilbert Cruz</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Daniel Handler, the author (as Lemony Snicket) of A Series of Unfortunate Events and All The Wrong Questions, and many other books for children, including the new The Bad Mood and the Stick, has also written, under his own name, his first play, Imaginary Comforts, or The Story of the Ghost of the Dead Rabbit, produced this fall at Berkeley Repertory Theatre, as well as six novels for adults. Handler will talk with Gilbert Cruz of the The New York Times about how storytelling illuminates every stage of our lives.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 1000 toc">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">On the Run: Fighting for Your Life </h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">10:00am - 11:00am</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">The Old Church (YA Stage)</h6>
+            <h6 class="yellowh">With: P.C. Cast, Traci Chee, April Henry, Alison Kastner</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>The story continues in these three sequels! In The Speaker, Traci Chee continues the Sea of Ink and Gold series as Sefia and Archer continue to fight the Guard and attempt to unravel the mysteries of the Book.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 1000 ohs">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Loneliness and the City: Graphic Novels and Memoirs on Finding Home</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">10:15am - 11:15am</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Oregon Historical Society (Wordstock Stage)</h6>
+            <h6 class="yellowh">With: Nicole J. Georges, Elizabeth Haidle, Leslie Stein, Deb Olin Unferth, Kelly Sue DeConnick</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Three new graphic memoirs and novels explore love, loss, and loneliness in the stories of three women. With moderator Kelly Sue DeConnick (Pretty Deadly, Bitch Planet).</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 1000 miller">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Storytime: There’s Nothing to Do!</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">10:30am - 11:00am</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Miller Gallery (Children’s Stage)</h6>
+            <h6 class="yellowh">With: Dev Petty</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Frog is bored. He can’t find ANYTHING to do—even when his animal friends make good suggestions, like sleeping all day, licking between his toes, or hopping around and then staring off into space. Will he find a fun and exciting way to spend his day? Featuring the beloved characters from I Don’t Want to Be a Frog and I Don’t Want to Be Big, this new story is sure to bring a smile to every kid who’s ever said “There’s nothing to do!”</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 1100 miller">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Storytime: I Got a New Friend </h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">11:10am - 11:40am</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Miller Gallery (Children’s Stage)</h6>
+            <h6 class="yellowh">With: Karl Newsom Edwards</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>When a little girl gets a new puppy, they have a lot to learn about each other. The new friends can be shy, messy, and sometimes get into trouble. They get lost, but they always get found. Their friendship may be a lot of work—but at the end of the day, they love each other! </p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 1100 crumpacker">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Words and Pictures: Award-winning Children’s Book Authors</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">11:15am - 12:15pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Crumpacker Library (Middle Grade Stage)</h6>
+            <h6 class="yellowh">With: Mac Barnett, Vera Brosgol, Carson Ellis, Javaka Steptoe, Natasha Forrester Campbell</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>An event all-times all-places show for all ages, offering a glimpse behind the scenes in the life of a children's book author. Four award-winning children's book authors in conversation about children's literature, writing and illustrating children's books.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 1100 winningstads">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">A Literary Dinner Party: Collaboration in the Kitchen and on the Page</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">11:30am - 12:30pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Winningstad Theatre (Cirillo-Cooke Stage)</h6>
+            <h6 class="yellowh">With: Andrew Barton, Kate Lebo, Samuel Ligon, Bonnie Frumkin Morales, Peter Schweitzer, Penelope Bass, Liz Crain</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Food that tells a story, and in this event all-times all-places show we explore stories about food with chefs turned writers and writers turned chefs. With moderator Penelope Bass of Imbibe magazine.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 1100 ohs">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">You Can’t Go Home Again: Memoir of the Past and Present</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">11:30am - 12:30pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Oregon Historical Society (Wordstock Stage)</h6>
+            <h6 class="yellowh">With: Gabrielle Bell, Jenny Forrester, Gabrielle Bell, Wendy Willis, Kate Carroll de Gutes</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Unflinchingly honest memoirs about mothers, money, anxiety, and dealing with the place you come from. With moderator Wendy Willis (A Long Late Pledge).</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 1100 brunish">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">On the Brink: Obsession and Ambition</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">11:45am - 12:45pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Oregon Historical Society (Wordstock Stage)</h6>
+            <h6 class="yellowh">With: Jessie Chaffee, Gabe Habash, Meg Howrey, Leni Zumas</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Characters on the edge of sanity and running from their past—to North Dakota, Italy, and Mars. With moderator Leni Zumas (The Listeners, forthcoming Red Clocks).</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 1100 fcucc">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">David Grann: Killers of the Flower Moon</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">11:45am - 12:45pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">First Congregational United Church of Christ</h6>
+            <h6 class="yellowh">With: David Grann, Geoff Norcross</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>David Grann, New Yorker staff writer and author of The Lost City of Z, discusses his new book, the bestseller Killers of the Flower Moon: The Osage Murders and the Birth of the FBI, a twisting, haunting true-life murder mystery about one of the most monstrous crimes in American history. </p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 1100 toc">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">It’s Complicated: LGBTQ+ YA </h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">11:45am - 12:45pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">The Old Church (YA Stage)</h6>
+            <h6 class="yellowh">With: Nina LaCour, Julie Murphy, Tillie Walden, Alicia Tate</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Teenagers trying to figure out who they are, all while dealing with complicated families, bullies, first loves, and first heartbreaks. Moderated by Alicia Tate of Multnomah County Library.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 1100 miller">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Storytime: Marielle in Paris</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">11:50am - 12:50pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Miller Gallery (Children’s Stage)</h6>
+            <h6 class="yellowh">With: Maxine Rose Schur, Jeanne B. de Sainte Marie</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Marielle the mouse has worked her dressmaking magic for nine days and nine nights to create nine beautiful dresses for Madame Sooree’s nine daughters. Finished at last, Marielle goes to bed, but when she wakes up, the dresses are gone!</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 1200 arlene">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">We Were Eight Years in Power: An American Tragedy</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">12:00pm - 1:00pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Arlene Schnitzer Concert Hall (Cole Haan Stage)</h6>
+            <h6 class="yellowh">With: Ta-Nehisi Coates, Jenna Wortham</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>“We were eight years in power” was the lament of Reconstruction-era black politicians as the American experiment in multiracial democracy ended with the return of white supremacist rule in the South. In this sweeping collection of new and selected essays, Ta-Nehisi Coates explores the tragic echoes of that history in our own time: the unprecedented election of a black president followed by a vicious backlash that fueled the election of the man Coates argues is America’s “first white president.”</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 1200 whitsell">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">OPB’s State of Wonder LIVE</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">12:00pm - 1:00pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Whitsell Auditorium</h6>
+            <h6 class="yellowh">With: Jeffrey Cranor, Joseph Fink, Morgan Parker, Tommy Pico, April Baer, Aaron Scott</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Our Wordstock edition features conversations with two writers of devastating wit and crack precision: poets, pranksters, and friends Morgan Parker (There Are More Beautiful Things than Beyoncé) and Tommy Pico (Nature Poem). “Creators Joseph Fink and Jeffrey Cranor (It Devours! A Welcome to Night Vale Novel) are our guests. With OPB’s April Baer and OPB’s Aaron Scott.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 1200 crumpacker">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Different Worlds</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">12:30pm - 1:30pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Crumpacker Library (Middle Grade Stage)</h6>
+            <h6 class="yellowh">With: Ben Clanton, Kate Ristau</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Neanderthal siblings Lucy and Andy are back to their paleo pranks. This time, they have to put up with more than just each other—the cave is feeling awfully cramped since the humans moved in. They’re in the Ice Age, and legroom comes at a real premium!</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 1200 ohs">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Wicked Funny: American Absurdity in Fiction</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">12:45pm - 1:45pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Oregon Historical Society (Wordstock Stage)</h6>
+            <h6 class="yellowh">With: Jon Raymond, Deb Olin Unferth, Dennie Wendt, Cari Luna</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>The American dream is taken to task in three new works of fiction about people trying to be good but often becoming misdirected or confused, despite best intentions. With moderator Cari Luna (The Revolution of Every Day).</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 1200 miller">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Storytime: The Wolf, the Duck, and the Mouse</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">12:50pm - 1:20pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Miller Gallery (Children’s Stage)</h6>
+            <h6 class="yellowh">With: Mac Barnett</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>When a woeful mouse is swallowed by a wolf, he quickly learns he is not alone: a duck has already set up digs, and, boy, has that duck got it figured out! Turns out it’s pretty nice in there, with delicious food and elegant table settings, courtesy of the wolf’s unchecked gluttony. And there’s something even better: no more fear of being eaten by a wolf! In fact, life is pretty good, until a hunter shows up...</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 100 winningstad">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Home Front/Front Lines: Americans and the Syrian Civil War</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">1:15pm - 2:15pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Winningstad Theatre (Cirillo-Cooke Stage)</h6>
+            <h6 class="yellowh">With: Elliot Ackerman, Alia Malek, Emily Robbins, Geoff Norcross</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>An Arab American man tries to cross from Turkey to Syria in order join the revolutionaries in Dark at the Crossing, by Marine veteran and journalist Elliot Ackerman.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 100 whitsell">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Disruption: Feminist Digital Culture</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">1:30pm - 2:30pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Whitsell Auditorium</h6>
+            <h6 class="yellowh">With: Doree Shafrir, Ellen Ullman, Jazmine Hughes</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>A conversation from the front lines of gender and tech culture featuring Doree Shafrir, Senior Tech Editor at BuzzFeed News and author of the novel Startup, and Ellen Ullman, who worked as a programmer at the beginning of the digital revolution and is the author four books, most recently of the memoir Life in Code: A Personal History of Technology. With moderator Jazmine Hughes of the New York Times Magazine.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 100 miller">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Storytime: Du Iz Tak? </h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">1:30pm - 2:00pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Miller Gallery (Children’s Stage)</h6>
+            <h6 class="yellowh">With: Carson Ellis</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Du iz tak? What is that? As a tiny shoot unfurls, two damselflies peer at it in wonder. When the plant grows taller and sprouts leaves, some young beetles arrive to gander, and soon—with the help of a pill bug named Icky—they wrangle a ladder and build a tree fort. But this is the wild world, after all, and something horrible is waiting to swoop down—booby voobeck!—only to be carried off in turn. </p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 100 ohs">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">First Congregational United Church of Christ</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">1:30pm - 2:30pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Oregon Historical Society (Wordstock Stage)</h6>
+            <h6 class="yellowh">With: Jeffrey Eugenides, Danzy Senna, Julie Buntin</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Darkly comic tales of suspicion, loneliness, and obsession, of characters pushed to the extreme—often by the unraveling in their own minds. Pulitzer Prize-winning author Jeffrey Eugenides discusses his new—and first—story collection, Fresh Complaint, with Danzy Senna, author of New People, a novel of race, class, and manners in New York City in the late 1990s. Moderated by Julie Buntin (Marlena).</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 100 toc">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Rebel Rebel: Revolutionaries and Resisters</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">1:30pm - 2:30pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">The Old Church (YA Stage)</h6>
+            <h6 class="yellowh">With: Julie C. Dao, Fonda Lee, Emily Suvada, Amber J. Keyser</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>In other worlds—a dystopian future, the empire of Feng Lu, a colonized Earth—our heroes must confront darkness and danger as they fight against evil empires and their own destinies. Moderated by Amber Keyser (Pointe Claw).</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 100 brunish">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">In the Labyrinth: Pop Culture, Science, and Mythology in Poetry</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">1:45pm - 2:45pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Brunish Theatre</h6>
+            <h6 class="yellowh">With: Bonnie Arning, Samiya Bashir, Nicole Sealey, Natalie Garyet</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Poetry of the natural world, the unknown universe; of love and the undoing of love; of identity and history. With moderator Natalie Garyet of Tavern Books.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 100 crumpacker">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">New Kids</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">1:45pm - 2:45pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Crumpacker Library (Middle Grade Stage)</h6>
+            <h6 class="yellowh">With: Matthew Holm, Mike Lawrence, Jonathan Hill</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Graphic novels about being the new kid. Summer's over and it's time for Sunny Lewin to enter the strange and unfriendly hallways of... middle school. When her Gramps calls her from Florida to ask how she’s doing, she always tells him she’s fine. But the truth? Sunny is NOT having the best time.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 200 miller">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Storytime: Radiant Child</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">2:10pm - 2:40pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Miller Gallery (Children’s Stage)</h6>
+            <h6 class="yellowh">With: Javaka Steptoe</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Award-winning illustrator Javaka Steptoe’s vivid text and bold artwork echoing Basquiat’s own introduce young readers to the powerful message that art doesn’t always have to be neat or clean–and definitely not inside the lines–to be beautiful.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 200 ohs">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">WITS Anthology Launch: Galaxies on the Ground</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">2:15pm - 3:15pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Oregon Historical Society (Wordstock Stage)</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>High school students from Portland Public Schools read from their work featured in the 2016/17 Writers in the Schools anthology, Galaxies on the Ground. Wordstock: Portland’s Book Festival admission is FREE for attendees 17 and younger and/or with valid high school ID.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 200 miller">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Storytime: Leave Me Alone!</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">2:50pm - 3:20pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Miller Gallery (Children’s Stage)</h6>
+            <h6 class="yellowh">With: Vera Brosgol</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>One day, a grandmother shouts, “LEAVE ME ALONE!” and leaves her tiny home and her very big family to journey to the moon and beyond to find peace and quiet to finish her knitting. Along the way, she encounters ravenous bears, obnoxious goats, and even hordes of aliens! But nothing stops grandma from accomplishing her goal—knitting sweaters for her many grandchildren to keep them warm and toasty for the coming winter.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 300 whitsell">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">State of Wonder at Wordstock</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">3:00pm - 4:00pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Whitsell Auditorium</h6>
+            <h6 class="yellowh">With:Katie Kitamura, Chuck Klosterman, Hannah Tinti, April Baer, Aaron Scott</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Katie Kitamura’s newest work reads like Daphne DuMaurier for the 21stcentury. Hannah Tinti tells about crafting the dark family history that became her lest book, The Twelve Lives of Samuel Hawley. Pop critic Chuck Klosterman (But What If We’re Wrong?, Chuck Klosterman X), who decides and recodes everything from Taylor Swift to Kobe Bryant, Stephen Malkmus to Lou Reed.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 300 winningstad">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">The Body and Power: New Black Poetry</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">3:00pm - 4:00pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Winningstad Theatre (Cirillo-Cooke Stage)</h6>
+            <h6 class="yellowh">With: Dawn Lundy Martin, Morgan Parker, Danez Smith, Béalleka</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Three poets discuss their new books, exploring love and violence, anger and desire, vulnerability and pain, grief and mortality, justice and blackness, and more.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 300 crumpacker">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Kid Detectives</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">3:00pm - 4:00pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Crumpacker Library (Middle Grade Stage)</h6>
+            <h6 class="yellowh">With: Melissa Savage, Heidi Schulz, Michael Buckley</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Lemonade Liberty Witt’s mama always told her: When life gives you lemons, make lemonade. But Lem can’t possibly make lemonade out of her new life in Willow Creek, California—the Bigfoot Capital of the World—where she’s forced to live with a grandfather she’s never met after her mother passes away.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 300 fccuc">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Innocence Lost: Maile Meloy and Claire Messud in Conversation</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">3:15pm - 4:15pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">First Congregational United Church of Christ</h6>
+            <h6 class="yellowh">With: Claire Messud, John Freeman, Maile Meloy</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Two best-selling authors discuss their new books, psychological mysteries where children go missing and painful truths are revealed in crisis, exploring the spaces between childhood innocence and the hard realities of adulthood.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 300 toc">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Not Quite Meet Cute: Modern Romantic Comedies</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">3:15pm - 4:15pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">The Old Church (YA Stage)</h6>
+            <h6 class="yellowh">With: Jenny Han, Sandhya Menon, Zan Romanoff, Brendan Kiely</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Pretend boyfriends, arranged marriages, getting photographed by the paparazzi? These YA novels are not your typical love stories. Moderated by Brendan Kiely (The Last True Love Story).</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 300 ohs">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">A Portrait of the Artist: Coming of Age Memoirs</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">3:10pm - 4:30pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Oregon Historical Society (Wordstock Stage)</h6>
+            <h6 class="yellowh">Chelsea Martin, Kristen Radtke, Rob Spillman, David Biespiel</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Three writers on how they came of age and found their voice as an artist. With moderator Rob Spillman (All Tomorrow’s Parties, Tin House).</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 300 brunish">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Sex, Lies, and Polar Bears: Relationships on the Edge</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">3:30pm - 4:30pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Brunish Theatre</h6>
+            <h6 class="yellowh">With: Nancy Pearl, Shanthi Sekaran, Peter Rock, Pauls Toutonghi</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>First comes love—young love on the run, the girl next door, an unlikely husband—then comes the secrets. With moderator Pauls Toutonghi (Dog Gone).</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 300 miller">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Storytime: How to Make Friends with a Ghost</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">3:30pm - 4:00pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Miller Gallery (Children’s Stage)</h6>
+            <h6 class="yellowh">With: Rebecca Green</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>A whimsical story about ghost care, Rebecca Green’s debut picture book is a perfect combination of offbeat humor, quirky and sweet illustrations, and the timeless theme of friendship.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 400 whitsell">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">The Past Is Present: New Fiction</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">4:30pm - 5:30pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Whitsell Auditorium</h6>
+            <h6 class="yellowh">With:Julie Buntin, Rachel Khong, Edan Lepucki, Steph Opitz</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>The protagonists of these novels are women who find themselves at a crossroads, questioning who they are as they realize the precariousness of the lives they have built for themselves. Moderated by Steph Opitz.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 400 miller">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">The Whiz Mob and the Grenadine Kid </h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">4:30pm - 5:30pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Miller Gallery (Children’s Stage)</h6>
+            <h6 class="yellowh">With: Carson Ellis, Colin Meloy, Amy Martin</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>It is an ordinary Tuesday morning in April when bored, lonely Charlie Fisher witnesses something incredible. Right before his eyes, in a busy square in Marseille, a group of pickpockets pulls off an amazing robbery. As the young bandits appear to melt into the crowd, Charlie realizes with a start that he himself was one of their marks.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 400 winningstad">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Where the Wild Things Are: Seeing Ourselves in Animals</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">4:45pm - 5:45pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Winningstad Theatre (Cirillo-Cooke Stage)</h6>
+            <h6 class="yellowh">With: Steven Church, Elena Passarello, Oliver Uberti, Jon Mooallem</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>Three writers explore our tendency to see the man in animal, and the animal in man.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 400 ohs">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Outlaws and Renegades: Innovative Short Forms</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">4:45pm - 5:45pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Oregon Historical Society (Wordstock Stage)</h6>
+            <h6 class="yellowh">Jess Arndt, Tom Gauld, Sarah Manguso, Robin Romm</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>These three writers stretch the boundaries of genre to create new and exciting forms of literature, and the results are surprising and often hilarious. Moderated by Robin Romm (editor of The Double Bind: Women on Ambition).</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 500 fccuc">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Resistance and Rebellion: Dystopian Fiction</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">5:00pm - 6:00pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">First Congregational United Church of Christ</h6>
+            <h6 class="yellowh">With: Omar El Akkad, Benjamin Percy, Lidia Yuknavitch, Fiona McCann</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>In contemporary Portland, a group of misfits must work together to stop Internet demons from spreading virally into the real world. In 2049, the child-rebel Joan of Arc fights for humankind on an Earth ravaged by climate change. In 2074, the second American Civil War breaks out over fossil fuels in a United States decimated by flooding and terrorism.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 500 toc">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Girl Versus the World: Searching for Identity</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">5:00pm - 6:00pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">The Old Church (YA Stage)</h6>
+            <h6 class="yellowh">With: Erika L. Sánchez, Renée Watson, Gesse Stark-Smith, Chris Struyk-Bonn</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>These three characters deal with first loves, overbearing adults, heartbreak, yearning to escape where you come from, and the complications of money and class as they search for who they are.</p>
+        </div>
+      </div>
+      <div class="event all-times all-places show 500 brunish">
+        <div class="row">
+          <div class="twelve columns">
+            <h5 class="blueh">Sex, Lies, and Polar Bears: Relationships on the Edge</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns">
+            <h4 class="orangeh">5:15pm - 6:15pm</h4>
+          </div>
+          <div class="eight columns">
+            <h6 class="orangeh">Brunish Theatre</h6>
+            <h6 class="yellowh">With: Kaveh Akbar, Melissa Febos, Megan Stielstra, Marisa Siegel</h6>
+          </div>
+        </div>
+        <div class="twelve columns">
+          <p>How do we create art from our own wounds and wonders? In their poetry, memoirs, and essays, these three writers reckon with personal trauma and healing. Kaveh Akbar’s appearance is in partnership with the Poetry Foundation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="big-footer container">
+      <div class="row">
+        <div class="three columns">
+          <div id="contact">
+            <div class="contact-wrap">
+              <h6>Contact</h6>
+              <p>Literary Arts 925&nbsp;SW Washington St.&nbsp;Portland, OR 97205
+              </p>
+              <hr>
+              <p>
+                503.227.2583<br>503.241.4256 fax&nbsp;la@literary-arts.org</p>
+              <p>
+                <a href="#">Privacy Policy</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="footer-nav" class="three columns">
+          <h6>Pages</h6>
+          <ul>
+            <li><a href="#">About Wordstock</a></li>
+            <li><a href="#">Onstage Events</a></li>
+            <li><a href="#">Authors &amp; Presenters</a></li>
+            <li><a href="#">Workshops</a></li>
+            <li><a href="#">Exhibitors &amp; Vendors</a></li>
+            <li><a href="#">Partner Events</a></li>
+            <li><a href="#">Past Festivals</a></li>
+            <li><a href="#">Book Submissions</a></li>
+            <li><a href="#">Volunteer Sign-Ups</a></li>
+            <li><a href="#">Supporters</a></li>
+            <li><a href="#">Tickets</a></li>
+          </ul>
+        </div>
+        <div id="footer-nav-collapsed" class="three columns">
+          <h6>Pages <i class='fal fa-angle-down'></i></h6>
+          <ul style="display: none;">
+            <li><a href="#">About Wordstock</a></li>
+            <li><a href="#">Onstage Events</a></li>
+            <li><a href="#">Authors &amp; Presenters</a></li>
+            <li><a href="#">Workshops</a></li>
+            <li><a href="#">Exhibitors &amp; Vendors</a></li>
+            <li><a href="#">Partner Events</a></li>
+            <li><a href="#">Past Festivals</a></li>
+            <li><a href="#">Book Submissions</a></li>
+            <li><a href="#">Volunteer Sign-Ups</a></li>
+            <li><a href="#">Supporters</a></li>
+            <li><a href="#">Tickets</a></li>
+          </ul>
+        </div>
+        <div id="tweets" class="six columns">
+          <h6><a href="https://twitter.com/literaryarts"></a>Twitter</h6>
+          <div class="plugin-box"><a class="twitter-timeline" data-height="400" data-link-color="#181818" data-border-color="#181818" data-chrome="noheader nofooter" href="https://twitter.com/literaryarts?ref_src=twsrc%5Etfw">Tweets by literaryarts</a></div>
+        </div>
+        <div id="tweets-collapsed" class="six columns">
+          <h6>Twitter <i class='fal fa-angle-down'></i></h6>
+          <div class="plugin-box" style="display: none;"><a class="twitter-timeline" data-height="400" data-link-color="#181818" data-border-color="#181818" data-chrome="noheader nofooter" href="https://twitter.com/literaryarts?ref_src=twsrc%5Etfw">Tweets by literaryarts</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="small-footer">
+      <div class="container">
+        <div class="row">
+          <div class="twelve columns copyright">
+            <p>Copyright &copy; Literary Arts 2018 </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+<script type="text/javascript">
+  $(document).ready()
+
+  function toggleMenu() {
+    var menu = document.getElementById('primary-nav');
+    menu.classList.toggle("show");
+  }
+
+  var button = document.getElementById('togglenav');
+  button.addEventListener('click', toggleMenu);
+
+</script>
+
+<script type="text/javascript" src="scripts/filter.js"></script>
+
+<script type="text/javascript">
+  $(function() {
+    $('#time').change(function() {
+      $('#place').val('all-places');
+      $(".event:not(" + $("#time").val() + ")").hide(800);
+      $("." + $("#time").val()).show(800);
+    });
+    $('#place').change(function() {
+      $('#time').val('all-times');
+      $(".event:not(" + $("#place").val() + ")").hide(800);
+      $("." + $("#place").val()).show(800);
+    });
+  });
+
+</script>
+
+<script>
+  AOS.init();
+
+</script>
+
+<script>
+  jQuery(document).ready(function($) {
+
+    $("#footer-nav-collapsed h6").click(function() {
+      $("#footer-nav-collapsed ul").slideToggle("slow");
+      $("#footer-nav-collapsed h6 i").toggleClass("fa-angle-down");
+      $("#footer-nav-collapsed h6 i").toggleClass("fa-angle-up")
+    });
+    $("#tweets-collapsed h6").click(function() {
+      $("#tweets-collapsed .plugin-box").slideToggle("slow");
+      $("#footer-nav-collapsed h6 i").toggleClass("fa-angle-down");
+      $("#footer-nav-collapsed h6 i").toggleClass("fa-angle-up")
+    });
+
+  });
+
+</script>
+
+</html>
